@@ -29,8 +29,18 @@ body {
   margin: -1px;
 }
 /* studio styles */
-/* nav styles */
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px dashed red;
+}
 
+/* nav styles */
+.header > .container {
+  border: 1px solid #ececec;
+}
 .logo {
   color: var(--logo-color);
 
@@ -44,8 +54,11 @@ body {
 .logo-header {
   color: var(--accent-color);
 }
-.nav-list {
+.nav-list,
+.contact-list,
+.footer-list {
   list-style: none;
+  margin-bottom: 0;
 }
 .nav-list .list-item {
   color: var(--secondary-text-color);
@@ -63,10 +76,6 @@ body {
   color: var(--accent-color);
 }
 
-.contact-list,
-.footer-list {
-  list-style: none;
-}
 .mail,
 .phone {
   color: var(--primary-text-color);
@@ -85,9 +94,18 @@ body {
 }
 
 /* main styles */
+.section-padding {
+  margin-bottom: 94px;
+}
 /* hero styles */
 .hero {
   background-color: var(--dark-background-color);
+
+  margin-bottom: 94px;
+}
+.hero > .container {
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   font-weight: 900;
@@ -96,7 +114,11 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
   color: var(--nav-background-color);
+
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 .hero-btn {
   color: var(--nav-background-color);
@@ -123,6 +145,7 @@ body {
 /* Advatages styles */
 .advantages-list {
   list-style: none;
+  margin-top: 0;
 }
 .advantages-list h3 {
   color: var(--secondary-text-color);
@@ -132,11 +155,17 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 .advantages-list p {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  margin-top: 0;
+  margin-bottom: 0;
 }
 /* occupation styles */
 .occupation h2 {
@@ -147,14 +176,24 @@ body {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 .occupation ul {
   list-style: none;
+
+  margin-top: 0;
+  margin-bottom: 0;
 }
 /* team styles */
 .team {
   color: var(--secondary-text-color);
   background-color: var(--secondary-bg-color);
+}
+.team > .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .team h2 {
   font-weight: 700;
@@ -162,31 +201,50 @@ body {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 .team-list {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .team-list-item {
   background-color: var(--nav-background-color);
+  padding-bottom: 30px;
+}
+.team-list-item img {
+  margin-bottom: 30px;
 }
 .team-list h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 .team-list p {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+
+  margin-top: 0;
 }
 /* footer styles */
 .footer {
   background-color: var(--dark-background-color);
 }
+.footer > .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .footer .logo {
   color: var(--nav-background-color);
+  margin-bottom: 20px;
 }
 .logo-footer {
   color: var(--accent-color);
@@ -198,6 +256,12 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--nav-background-color);
+
+  margin-top: 0;
+}
+.footer-list {
+  margin-top: 0;
+  padding-left: 0;
 }
 .footer-list .google-adress {
   font-family: "Roboto";
@@ -216,9 +280,15 @@ body {
 }
 
 /* portfolio styles */
+.header-portfolio {
+  margin-bottom: 94px;
+}
 
 .gallery-filter {
   list-style: none;
+
+  margin-top: 0;
+  margin-bottom: 34px;
 }
 .gallery-filter button {
   color: var(--secondary-text-color);
@@ -231,6 +301,8 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+  border-radius: 4px;
+  border: 1px transparent;
 }
 .gallery-filter button:focus,
 .gallery-filter button:hover,
@@ -241,9 +313,17 @@ body {
 .gallery-portfolio {
   list-style: none;
   background-color: var(--nav-background-color);
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.gallery-portfolio li {
+  padding-bottom: 20px;
 }
 .gallery-portfolio a {
   text-decoration: none;
+
+  margin-bottom: 20px;
 }
 .gallery-portfolio h2 {
   color: var(--secondary-text-color);
@@ -252,6 +332,9 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  margin-top: 0;
+  margin-bottom: 4px;
 }
 .gallery-portfolio p {
   color: var(--primary-text-color);
@@ -259,4 +342,7 @@ body {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
+
+  margin-top: 0;
+  margin-bottom: 0;
 }
